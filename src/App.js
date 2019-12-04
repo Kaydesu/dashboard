@@ -37,7 +37,7 @@ class App extends Component {
 
   componentWillMount = () => {
 
-    const socket = io('http://localhost:5000/');
+    const socket = io('http://18.179.14.225:3000');
     socket.on('connect', () => {
       console.log('Connected');
       this.setState({socket: socket});
@@ -53,7 +53,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    fetch('/api/data/')
+    fetch('http://18.179.14.225:3000/api/data/')
     .then(res => res.json())
     .then(data => this.setState({threshold: data['JOY_THRESHOLD'], candiesDropped: data['CANDY_DROP']}))
   }
