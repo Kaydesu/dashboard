@@ -1,0 +1,84 @@
+.input-range__slider {
+    appearance: none;
+    background: white;
+    border: 1px solid #d4d4d4;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    height: 1rem;
+    margin-left: -0.5rem;
+    margin-top: -0.65rem;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+    width: 1rem; 
+}
+
+  
+  .input-range__slider-container {
+    transition: left 0.15s ease-out; 
+}
+  
+  .input-range__label {
+    color: black;
+    font-family: "Helvetica Neue", san-serif;
+    font-size: 0.9rem;
+    transform: translateZ(0);
+    white-space: nowrap; 
+}
+  
+  .input-range__label--min,
+  .input-range__label--max {
+    bottom: -1.8rem;
+    position: absolute; 
+}
+  
+  .input-range__label--min {
+    left: 0; 
+}
+  
+  .input-range__label--max {
+    right: 0; 
+}
+  
+  .input-range__label--value {
+    position: absolute;
+    top: -1.8rem; 
+}
+  
+  .input-range__label-container {
+    left: -50%;
+    position: relative; }
+    .input-range__label--max .input-range__label-container {
+      left: 50%; }
+  
+  .input-range__track {
+    background: #d4d4d4;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    display: block;
+    height: 0.3rem;
+    position: relative;
+    transition: left 0.15s ease-out, width 0.15s ease-out;
+    }
+    .input-range--disabled .input-range__track {
+      background: #d4d4d4; }
+  
+  .input-range__track--background {
+    left: 0;
+    margin-top: -0.15rem;
+    position: absolute;
+    right: 0;
+    top: 50%; }
+  
+  .input-range__track--active {
+    background: #d4d4d4; }
+  
+  .input-range {
+    height: 5px;
+    position: relative;
+    margin-top: 45px;
+    width: 100%; }
+  
+  /*# sourceMappingURL=index.css.map */
